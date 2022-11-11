@@ -3,13 +3,13 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
   }
   
   li {
@@ -30,5 +30,56 @@ ul {
     background-color: rgb(87, 77, 83);
   }
   .active {
-    background-color: #04AA6D;
+    background-color: rgb(87, 77, 83);
+  }
+
+  body, html {
+    height: 100%;
+  }
+  
+  .bgimg-1 {
+    /* The image used */
+    background-image: url(https://images-cdn.welcomesoftware.com/Zz0zZTliMjQ4MzhlNGExMWViYmJiMjFiZTI2ZWNmN2MzZA==);
+    height: 200%;
+  }
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+div {
+    display: block;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+.caption span.border
+{
+    background-color: #333;
+    color: pink;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(205, 29, 29);
+}
+.stuff {
+position: relative;
   }
